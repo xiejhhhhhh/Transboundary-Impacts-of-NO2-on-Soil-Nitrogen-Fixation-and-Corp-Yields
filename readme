@@ -1,0 +1,63 @@
+This repository contains data processing, modeling scripts, and analytical notebooks for the research project:  
+**"Transboundary Impacts of NO₂ on Soil Nitrogen Fixation and Their Effects on Crop Yields in China"**  
+Published in *Agriculture-Basel*, DOI: [10.3390/agriculture15020208](https://doi.org/10.3390/agriculture15020208)
+
+🌍 Project Background
+
+The study explores how atmospheric NO₂ influences soil nitrogen fixation processes and subsequently impacts major grain crop yields (maize and wheat) across China. Utilizing remote sensing data, IPCC projections, and machine learning models, this work quantifies spatial transboundary pollution effects and identifies key mitigation-leverage zones.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📁 Repository Contents
+
+| Notebook Name                             | Description |
+|----------------------------------------- -|-------------|
+| `Clean data`                              | Preprocess raw environmental and crop datasets. |
+| `Crop_IPCC`                               | Incorporate IPCC-based climate scenario data into crop modeling. |
+| `Data Consolidation and Random Sample Point Selection` | Merge multi-source data and generate sampling points for modeling. |
+| `NDVI`                                    | Calculate NDVI indicators from MODIS for wheat and maize. |
+| `NO2 area calculation`                    | Analyze NO₂ hotspot areas using TROPOMI and EDGAR data. |
+| `Random Forest Regression Model`          | Train Random Forest models to predict crop yields. |
+| `XGBoost models and SHAP analysis`        | Apply XGBoost models with SHAP for feature interpretation. |
+| `Stacking model`                          | Integrate multiple models for improved performance via ensemble learning. |
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🛠️ Methods and Tools
+
+- **Data Sources**:
+  - NO₂: TROPOMI, EDGAR
+  - Soil: SoilGrids
+  - Vegetation: MODIS (NDVI)
+  - Climate: CHIRPS, IPCC scenarios
+  - Crop Yields: SPAM and national statistics
+
+- **Techniques**:
+  - Machine Learning: Random Forest, XGBoost, Stacking
+  - Feature Analysis: SHAP values for model interpretability
+  - Remote Sensing Processing: Google Earth Engine
+  - Spatial Analysis: ArcGIS, GeoPandas
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📊 Key Findings
+
+- Soil nitrogen fixation modulates the negative impacts of NO₂ on crop yield.
+- Identified NO₂ exposure thresholds where yield loss is significant.
+- Proposed priority regions for emission control to stabilize grain output.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🧑‍💻 Author
+
+**Jinhui Xie**  
+Master's student, UCAS – Sino-Danish Center  
+📧 [xiejh_simlab@qq.com](mailto:xiejh_simlab@qq.com)  
+🔗 [GitHub Profile](https://github.com/xiejhhhhhh)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+📄 Citation
+
+> Xie, J.; Deng, X. (2024). *Transboundary Impacts of NO₂ on Soil Nitrogen Fixation and Their Effects on Crop Yields in China*. Agriculture, 15(2), 208. [DOI](https://doi.org/10.3390/agriculture15020208)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📜 License
+
+This repository is for academic and non-commercial research purposes. Please cite the original publication if you use any part of this work.
